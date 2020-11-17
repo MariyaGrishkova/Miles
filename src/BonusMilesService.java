@@ -1,12 +1,8 @@
 public class BonusMilesService {
-    public int calculate(int amount) {
-        long price = 20_000L;
-        float index = 0.05F;
+    public int calculate(int price, float index) {
+       int miles = (int) (price * index);
 
-        int miles;
-        miles = (int) (price * index);
-
-        return miles;
+        return (int) miles;
     }
 }
 
